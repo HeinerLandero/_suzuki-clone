@@ -316,6 +316,7 @@ li{
     display: flex;
     margin-top: 50px;
     margin-left: 50px;
+    margin-bottom: 100px;
 }
 
 .container-colors .colors-select-container{
@@ -371,6 +372,19 @@ li{
 }
 .car-white{
   position: absolute;
+}
+/* seccion de servicios */
+.title-services-container{
+    width: 100%;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.title-services-container .section-services{
+    font-size: 4.6rem;
+    line-height: 5.7rem;
+    text-align: center;
 }
 
 
