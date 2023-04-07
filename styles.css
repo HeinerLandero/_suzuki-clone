@@ -17,7 +17,7 @@ html{
 }
 
 header{
-    width: 95%;
+    width: 100%;
     height:85px;
 }
 .nav-fixed{
@@ -367,11 +367,15 @@ li{
 }
 .fondo img{
     width: 100%;
-    height:100%;
+    height: auto;
     position: absolute;
 }
 .car-white{
-  position: absolute;
+  position: absolute; 
+}
+.car-white img{
+    width: 100%;
+    height: auto;
 }
 /* seccion de servicios */
 .title-services-container{
@@ -380,11 +384,60 @@ li{
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    margin-bottom:50px ;
 }
 .title-services-container .section-services{
     font-size: 4.6rem;
     line-height: 5.7rem;
     text-align: center;
 }
+#servicios{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1211px;
+    margin: 0 auto;
+}
+#servicios .box-services{
+    width: 270px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
 
+#servicios img{
+    width: 87px;
+    height: 92px;
+}
+#servicios figure{
+    display: flex;
+    justify-content: center;
 
+}
+#servicios h3{
+    color: #000000;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+#servicios p{
+    color: #000000;
+    font-family: 'RobotoRegular', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: center;
+    margin-bottom: 36px;
+}
+#servicios a{
+    color: #000000;
+    font-size: 20px;
+    line-height: 25px;
+    text-decoration-line: underline;
+}
