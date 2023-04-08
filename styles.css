@@ -441,3 +441,55 @@ li{
     line-height: 25px;
     text-decoration-line: underline;
 }
+/* seccion de suzuki te mueve */
+#swiper-suzuki{
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+}
+#swiper-suzuki .tittle-swiper{
+    width: 100%;
+    height: 46px; 
+    display: flex;
+    justify-content: center;  
+    margin-top: 50px; 
+    margin-bottom: 60px;
+}
+#swiper-suzuki h2{
+    font-size: 4.6rem;
+    text-align: center;
+}
+#swiper-suzuki .container-img--zoom{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+#swiper-suzuki .img-zoom{
+    width: 440px;
+    height: 310px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+#swiper-suzuki img{
+    width: 100%;
+    height: 100%;
+}
+#swiper-suzuki .img-zoom .cont-subtitle{
+    width: auto;
+    height: 45px;
+    position: absolute;
+    bottom: 10px;
+}
+
+#swiper-suzuki h3{
+    border-bottom: 1px solid;
+    color: #FFFFFF;
+    margin: 0 auto;
+    font-size: 4rem;
+    line-height: 4.5rem;
+    text-align: center;
+}
