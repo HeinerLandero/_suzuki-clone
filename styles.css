@@ -363,10 +363,6 @@ li{
     justify-content:flex-end;
 }
 .container-img--background{
-    display: flex;
-    width: 100%;
-    max-width: 1440px;
-    height: auto;
     position: relative;
   }
 
@@ -374,19 +370,21 @@ li{
     width: 100%;
     height: auto;
     position: absolute;
+    z-index: -1;
 }
 .fondo img{
     position:absolute;
 }
-figure .white-car {
-    position: relative;
-    top: 50%;
-    left: 50%;
+figure .white-car{
+    position: absolute;
+    top: 0;
+    left: 0;
     transform: translate(-50%, -50%);
     max-width: 90%;
     max-height: 90%;
     width: auto;
     height: auto;
+    z-index: 1;
   }
   .white-car img{
     position: absolute;
