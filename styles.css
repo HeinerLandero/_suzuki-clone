@@ -5,6 +5,7 @@
     --white-suzuki:#FFFFFF;
     --greyf-suzuki:#F7F7F7;
     --greyg-suzuki:#595B59;
+    --greyft-suzuki:#f6f6f6;
 }
 *{
     box-sizing: border-box;
@@ -166,6 +167,7 @@ a{
     color: var(--greyg-suzuki);
     padding: 10px;
 }
+/* main */
 main{
     width: 100%;
 }
@@ -175,6 +177,7 @@ main{
     height: 100%;
     margin-top: 10px;
 }
+
 .banner-back{
     width: 100%;
 }
@@ -315,8 +318,8 @@ li{
 .container-info-vitara{
     display: flex;
     margin-top: 50px;
-    margin-left: 50px;
     margin-bottom: 100px;
+    justify-content: center;
 }
 
 .container-colors .colors-select-container{
@@ -584,14 +587,22 @@ figure .white-car{
 /* swiper de noticias */
 .news-section {
     margin: 50px auto;
-    max-width: 1200px;
+    max-width: 1400px;
   }
   
   .section-title {
     text-align: center;
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 30px;
+    font-size: 4.5rem;
+    line-height: 4.8rem;
+  }
+  .sub-tittle-news{
+    font-size: 2rem;
+    font-family: 'nunito_sansregular', Arial, Helvetica, sans-serif;
+    color: var(--greyg-suzuki);
+    text-align: center;
+    line-height: 3rem;
+    margin-top: 15px;
+    margin-bottom: 20px;
   }
   
   .news-container {
@@ -612,6 +623,7 @@ figure .white-car{
     width: 100%;
     height: 200px;
     object-fit: cover;
+    
   }
   
   .news-title {
@@ -640,3 +652,103 @@ figure .white-car{
     background-color: red;
     color: var(--white-suzuki);
   }
+ /* seccion del footer  */
+
+footer{
+    background-color: var(--greyft-suzuki);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer .container-footer--location{
+    width: 100%;
+    max-width: 1100px;
+    height: 108px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+footer .map-pin{
+    width:  auto;
+    height: auto;
+    display: flex;
+    margin-right: 20px;
+    font-family: 'nunito_sans_blackregular', sans-serif;;
+    font-size: 1.6rem;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+footer .map-pin span {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    background-image: url("/assets/pin-ubicacion-suzuki.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+footer .container-footer--location li{
+    display: inline-block;
+    padding: 0 7px;
+}
+footer .container-footer--location .ul-icon-social a{
+    display: flex;
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    padding: 5px;
+}
+footer .container-footer--location .ul-icon-social img{
+    width:21px; 
+}
+footer .footer-services .footer-services-aux{
+    margin: 10px auto;
+    padding: 25px 0 35px 0;
+    border-bottom: 1px solid #dfe2e7;
+    display: flex;
+}
+footer .footer-services{
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+footer .footer-services .footer-services-aux{
+    margin: 10px auto;
+    padding: 25px 0 35px 0;
+    border-bottom: 1px solid #dfe2e7;
+}
+footer .footer-services h3{
+    width: 80%;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'nunito_sansregular',sans-serif;
+    color: #7a7a7a;
+    letter-spacing: .2px;
+    margin-bottom: 20px;
+} 
+footer .footer-services li{
+    color: #666666;
+    display: block;
+    font-size: 13px;
+    margin: 14px auto;
+}
+footer .footer-services a{
+    font-family: 'nunito_sansregular';
+    color: #666666;
+    font-weight: 400;
+}
+.container-ul{
+    width: 16.66%;
+}
+
+
+  
