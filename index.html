@@ -9,43 +9,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;1,300;1,400&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
     <title>Suzuki home</title>
+    <script type="text/javascript">
+        const title = document.title ;
+    
+        window.addEventListener('blur', () => {
+            document.title = 'zzzzzzzz'
+        });
+        window.addEventListener('focus', () => {
+            document.title = title
+        });
+    </script>
 </head>
 <body>
+    <!-- Header 2023 -->
     <header>
-        <nav class="nav-fixed">
-            <!-- logo termindo -->
-            <div class="container-opc">
-                <div class="container-logo"><img src="./img/logo_suzuki.jpg" alt="Logo Suzuki">
-                </div>
-                <div class="container-opc-up">
-                        <ul>
-                            <li class="promo cont-promo"><a class="promo-red" href="#">PROMOCIONES</a></li>
-                            <li class="promo"><a href="#">CONTACTANOS</a></li>
-                            <li class="promo"><a href="#">REPUESTOS EN LÍNEA</a></li>
-                        </ul>
-                        <div class="icons-search">
-                            <span class="search"></span>
-                            <span class="a-mas"></span>
-                            <span class="a-menos"></span>
-                            <span class="mood"></span>
-                        </div>
-                </div>
-                <div class="container-opc-down">
-                    <ul>
-                        <li><a href="#">USADOS<span class="arrow-down"></span></a></li>
-                        <li><a href="#">SUCURSALES<span class="arrow-down"></span></a></li>
-                        <li><a href="#">POSTVENTA<span class="arrow-down"></span></a></li>
-                        <li><a href="#">PANELES<span class="arrow-down"></span></a></li>
-                        <li><a href="#">7 PASAJEROS<span class="arrow-down"></span></a></li>
-                        <li><a href="#">COMPACTOS Y SEDANES<span  class="arrow-down"></span></a></li>
-                        <li><a href="#">SUVS<span class="arrow-down"></span></a></li>
-                    </ul>
-                </div>
+        <nav class="container-nav">
+            <figure class="container-logo--nav">
+                 <img src="./img/logo_suzuki.jpg" alt="logo suzuki">
+            </figure>
+            <div class="container-options">
+                <ul class="ul-nav">
+                    <li><a href="#">MODELOS</a></li>
+                    <li><a href="#">POSTVENTA</a></li>
+                    <li><a href="#">SUCURSALES</a></li>
+                    <li><a href="#">USADOS</a></li>
+                    <li><a class="red-promo" href="#">PROMOCIONES</a></li>
+                    <li><span class="icon-search"></span></li>
+                </ul>
             </div>
+
         </nav>
     </header>
     
-    <!-- Header terminado -->
     <main>
         <!-- banner suzuki -->
         <section class="main-carrusel">
@@ -375,4 +370,5 @@
         </div>
     </footer>
 </body>
+
 </html>

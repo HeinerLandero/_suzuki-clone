@@ -1,11 +1,12 @@
 :root{
     /* colores */
-    --red-suzuki:#be172a;
+    --red-suzuki:#DE0039;
     --grey-suzuki:#333333;
     --white-suzuki:#FFFFFF;
     --greyf-suzuki:#F7F7F7;
     --greyg-suzuki:#595B59;
     --greyft-suzuki:#f6f6f6;
+    --greyht-suzuki:#414141;
 }
 *{
     box-sizing: border-box;
@@ -17,158 +18,81 @@ html{
     font-family: 'Barlow Condensed', sans-serif;
 }
 
+/* header-nav */
 header{
     width: 100%;
-    height:85px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
 }
-.nav-fixed{
-    position: fixed;
+header .container-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    height: 90px;
-    z-index: 1;
-    background-color: var(--white-suzuki);
+    height: 100%;
+    max-width: 1824px ;
+    margin: 0 auto;
+}
+header .container-nav .container-logo--nav{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+header .container-nav .container-logo--nav img{
+    width: 100%;
+    height: 100%;
+}
+header .container-nav .ul-nav{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+    width: max-content;
+    min-height: 80px;
+    height: 100%;
+}
+header .container-nav .container-options{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
 }
-.container-opc{
-    height: 80px;
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-}
-.container-logo {
-    position: relative;
-    display: flex;
-    align-self: flex-start;
-    height: 80px;
-    width: 18%;
-}
-.container-logo img{
-    position: absolute;
-    left: 10px;
-    align-self: center;
-    height: 70px;
-    top: 7px;
-}
-.container-opc .container-opc-up li{
-    height: 23px;
-    display: inline-block;
-    color: #333333;
+header .container-options a{
+    height: 100%;
     width: auto;
-    padding: 0 10px;
-}
-.container-opc .container-opc-up{
-    font-size: 11px;
-    line-height: 20px;
-    font-weight: 100;
-    letter-spacing: 1px;
-    width: 75%;
     display: flex;
-    justify-content: end;
-    text-align: end;
-    margin-right: 80px;
+    align-items: center;
 }
- ul{
-    list-style: none;
+
+header .container-options li :hover{
+    color: var(--red-suzuki);
+    border-bottom: 3px var(--red-suzuki) solid;
+}
+header .container-options li{
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+header .container-nav  .red-promo{
+    color: var(--red-suzuki);
+}
+
+header .container-nav a{
     text-decoration: none;
-}
-a{
-    text-decoration: none;
-    color:var(--grey-suzuki);
-    font-family:'nunito_sansregular', sans-serif;
-    font-weight: 100;
-}
-.icons-search{
-    opacity: 50%;
-    display: flex;
-    align-items: flex-end;
-    gap: 10px;
-}
-.icons-search .search{
-    background-image: url("assets/search.svg");
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    vertical-align: text-bottom;
-}
-.icons-search .a-mas{
-    background-image: url("assets/increase.svg");
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    vertical-align: text-bottom;
-}
-.icons-search .a-menos{
-    background-image: url("assets/decrease.svg");
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    vertical-align: text-bottom;
-}
-.icons-search .mood{
-    background-image: url("assets/nightlight.svg");
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    vertical-align: text-bottom;
-}
-.container-opc-up .promo{
-    width: 90px;
-    height: 20px;
-    display: block;
-    color: #ffffff;
-    border-radius: 10px;
-    padding: 10px;
-}
-.promo .promo-red{
-    color: #ffffff;
-    background-color: var(--red-suzuki);
-    padding: 8px;
-    border-radius: 30px;
-    cursor: pointer;
-}
-.promo .promo-red:hover{
-    color: #ffffff;
-    background-color: var(--grey-suzuki);
-    padding: 8px;
-    border-radius: 30px;
-    cursor: pointer;
-}
-.container-opc .container-opc-down {
-    padding-right: 80px;
-    padding-top: 15px;
-    display: flex;
-    direction: rtl;
-}
-.container-opc .container-opc-down li{
-    font-family:'nunito_sans_blackregular', sans-serif;
-    font-size: 12px;
+    font-style: normal;
     letter-spacing: 1px;
-    line-height: 20px;
-    display: inline-block;
-    padding-top: 10px;   
-    
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: capitalize;
+    color: var(--greyht-suzuki);
+    outline: none;
+    padding: 0 19px 0 16px;
 }
-.container-opc .container-opc-down a{
-    font-weight: bold;
-    color: var(--greyg-suzuki);
-    padding: 10px;
-}
+
 /* main */
 main{
     width: 100%;
@@ -182,9 +106,7 @@ main .main-carrusel{
     position: relative;
     width: 100%;
     height: 100%;
-    margin-top: 10px;
 }
-
 .banner-back{
     width: 100%;
 }
@@ -200,7 +122,7 @@ main .main-carrusel{
     position: absolute;
     max-width: 612px;
     width: 50%;
-    top: 25.62%;
+    top: 18.62%;
     left: 4.43%;
 }
 .container-banner{
@@ -568,9 +490,6 @@ figure .white-car{
     justify-content: center;
     margin: 0 auto;
     margin-top: 30px;
-}
-.container-iframe-video .video-suzuki{
-    
 }
 
 /* seccion de tarjetas de noticias */
