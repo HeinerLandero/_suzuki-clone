@@ -17,6 +17,9 @@ html{
     font-size: 62.5%;
     font-family: 'Barlow Condensed', sans-serif;
 }
+a{
+    text-decoration: none;
+}
 
 /* header-nav */
 header{
@@ -32,7 +35,7 @@ header .container-nav{
     width: 100%;
     height: 100%;
     max-width: 1824px ;
-    margin: 0 auto;
+    margin: 0 20px;
 }
 header .container-nav .container-logo--nav{
     width: 200px;
@@ -92,6 +95,27 @@ header .container-nav a{
     outline: none;
     padding: 0 19px 0 16px;
 }
+header .container-nav .icon-search{
+    background-image: url("./assets/ic_search.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+header .container-nav .container-icon--search{
+    display: none;
+}
+
+header .container-nav .container-icon--burger .icon-burger{
+    display: none;
+    background-image: url("./assets/ic_burguer.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:24px;
+    height: 24px;
+}
 
 /* main */
 main{
@@ -133,9 +157,9 @@ main .main-carrusel{
     width: 100%;
     height: auto;
     color: var(--white-suzuki);
-    font-size: 6.4rem;
+    font-size: 64px;
     font-weight: bold;
-    line-height: 6.0rem;
+    line-height: 60px;
     margin-bottom: 30px;
 }
 
@@ -148,10 +172,10 @@ main .main-carrusel{
     margin-top: 10px;
     width: auto;
     font-family: 'Roboto', sans-serif;
-    font-size:  2.1rem;
+    font-size:  21px;
+    line-height: 30px;
     color: var(--white-suzuki);
     font-weight: 400;
-    line-height: 3rem;
 }
 .carrusel .barra{
     background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
@@ -172,8 +196,8 @@ main .main-carrusel{
 }
 .btn-container button{
     cursor: pointer;
-    font-size: 2.0rem;
-    line-height: 2.5rem;
+    font-size: 20px;
+    line-height: 25px;
     border: none;
     height: 74.67px;
 }
@@ -199,8 +223,8 @@ main .main-carrusel{
 .carrusel-cards .title-card--options {
     display: block;
     text-align: center;
-    font-size: 4.5rem;
-    margin-top: 4.5rem; 
+    font-size: 45px;
+    margin-top: 45px; 
 }
 .carrusel-cards{
     width: 100%;
@@ -216,11 +240,11 @@ main .main-carrusel{
     display: flex;
     justify-content: center;
     gap: 0 4%;
-    margin-top: 3.5rem;
+    margin-top: 35px;
 }
 .container-options--cars a{
     font-family:'Barlow Condensed', sans-serif;
-    font-size: 2.8rem;
+    font-size: 28px;
     color: black;
 }
 .container-options--cars a:hover{
@@ -273,10 +297,10 @@ li{
 
 .container-info-vitara h2{
     border-top: 1px solid black;
-    font-size: 2.6rem;
+    font-size: 26px;
 }
 .container-info-vitara p{
-    font-size: 4.6rem;
+    font-size: 46px;
     font-weight: 300;
 }
 .button-view-config{
@@ -484,12 +508,17 @@ figure .white-car{
     margin-top: 15px;
 }
 .container-iframe-video{
-    width: 100%;
-    height: 100%;
+/*     width: 100%;
+    height: 100%; */
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 0 auto;
     margin-top: 30px;
+}
+.container-iframe-video .video-suzuki{
+    width: 1280px;
+    height: 720px;
 }
 
 /* seccion de tarjetas de noticias */
@@ -614,7 +643,7 @@ footer .map-pin{
     display: flex;
     margin-right: 20px;
     font-family: 'nunito_sans_blackregular', sans-serif;;
-    font-size: 1.6rem;
+    font-size: 16px;
     font-weight: bold;
     justify-content: center;
     align-items: center;
@@ -690,15 +719,21 @@ footer .footer-services a{
 /* responsive 1350px a 1780px */
 @media (min-width: 1350px) and (max-width: 1780px){
    main .carrusel{
-    top: 16%;
+    top: 12%;
     left: 3.5%;
+   }
+   .carrusel .barra{
+    margin: 10px 0;
+   }
+   .btn-container .buttom-up{
+    margin-top: 10px;
    }
 
 }
 /* responsive  980px a 1350px */
-@media (min-width: 980px) and (max-width: 1350px){
+@media (min-width: 981px) and (max-width: 1350px){
     main .carrusel{
-        top: 16%;
+        top: 7%;
         left: 3.5%;
         max-width: 375px;
        }
@@ -745,6 +780,7 @@ footer .footer-services a{
     .container-img--background{
         width: 100%;
     }
+    /* section info-vitara */
     .container-vitara{
         width: 100%;
         padding: 0;
@@ -753,12 +789,50 @@ footer .footer-services a{
         justify-content: center;
         align-items: center;
     }
+    /* video section */
+    .container-iframe-video .video-suzuki iframe{
+        width: 720px;
+        height: 320px;
+    }
+    .container-iframe-video .video-suzuki{
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
     
 }
 /* responsive 800px a 980px */
 @media (min-width: 800px) and (max-width: 980px){
 
+    /* video section */
+    .container-iframe-video .video-suzuki iframe{
+        width: 720px;
+        height: 320px;
+    }
+    .container-iframe-video .video-suzuki{
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+    /* section info-vitara */
+    .container-vitara{
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-img--background{
+        width: 100%;
+    }
+    
 }
+/*  responsive 721px a 800px  */
 @media (min-width: 721px) and (max-width: 800px){
     main .carrusel{
         top: 7%;
@@ -766,7 +840,7 @@ footer .footer-services a{
         max-width: 315px;
        }
     main .carrusel h1 {
-        margin-bottom: 0px;
+        margin-bottom: 0;
         font-size: 25px;
         line-height: 40px;
     }
@@ -814,6 +888,231 @@ footer .footer-services a{
         justify-content: center;
         align-items: center;
     }
+    /* section video-suzuki */
+    .container-iframe-video .video-suzuki iframe{
+        width: 720px;
+        height: 320px;
+    }
+    .container-iframe-video .video-suzuki{
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
 }
+@media (min-width: 320px) and (max-width: 980px){
+    header{
+        height: 50px;
+    }
 
+    header .container-nav .container-logo--nav img{
+        width: 80%;
+    }
+    .container-nav{
+        justify-content: space-between;
+    }
+    .container-icon--burger{
+        display: flex;
+    }
+    .carrusel{
+        top: 7.62%;
+    }
+    .carrusel h1{
+        font-size: 36px;
+        line-height: 40px;
+        margin-bottom: 0;
+    }
+
+    .carrusel span {
+        font-size: 48px;
+        line-height: 52px;
+    }
+
+    .carrusel .barra{
+        margin: 5px 0;
+    }
+
+    header .container-nav .container-options{
+        display: none;
+    }
+
+    .container-info-vitara {
+        flex-direction: column-reverse;
+    }
+    .btn-container .buttom-up  {
+        height: 43px;
+        font-size: 14px;
+        line-height: 16px;
+        width: 80%;
+        margin: 0;
+    }
+
+    .btn-container .buttom-down{
+        height: 43px;
+        font-size: 14px;
+        line-height: 16px;
+        width: 80%;
+    }
+    .car-white{
+        width: 100%;
+        height: auto;
+    }
+    .container-img--background {
+        width: 100%;
+        height: auto;
+    }
+    .car-white img{
+        width: 100%;
+    }
+
+
+    /* swiper suzuki */
+    #swiper-suzuki .container-img--zoom{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* section video */
+    .container-iframe-video .video-suzuki iframe{
+        width: 480px;
+        height: 240px;
+        align-self: center;
+    }
+    .container-iframe-video .video-suzuki{
+        justify-content: center;
+        align-items: center;
+    }
+}
+/* responsive 720px a 449px */
+
+@media (min-width: 449px) and (max-width: 719px){
+    .carrusel{
+        top: 6.62%;
+    }
+    .carrusel h1{
+        font-size: 26px;
+        line-height: 30px;
+        margin-bottom: 0;
+    }
+
+    .carrusel span {
+        font-size: 34px;
+        line-height: 40px;
+    }
+    .carrusel p{
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .carrusel .barra{
+        margin: 2px 0;
+    }
+    .btn-container{
+        gap: 4px;
+    }
+    .btn-container .buttom-up  {
+        height: 26px;
+        font-size: 10px;
+        line-height: 12px;
+        width: 170px;
+    }
+
+    .btn-container .buttom-down{
+        height: 26px;
+        font-size: 10px;
+        line-height: 12px;
+        width: 170px;
+    }
+
+    /* section swiper */
+    .carrusel-cards .title-card--options{
+        font-size: 32px;
+        line-height: 45px;
+        margin: 48px auto 40px;
+        width: 82%;
+    }
+    .container-options--cars ul{
+        gap: 38px;
+        overflow: hidden;
+    }
+    .container-options--cars a{
+        font-size: 22px;
+    }
+    .container-cards--cars{
+        margin-bottom: 88px;
+    }
+    /* section info vitara */
+    .container-vitara {
+        width: 100%;
+        padding: 0;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 68px;
+    }
+    .img-info{
+        width: 100%;
+        display: contents;
+    }
+    .fondo{
+        top: -110px;
+    }
+    /* section services */
+    .title-services-container .section-services{
+        font-size: 32px;
+    }
+    #servicios {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #servicios .box-services{
+        display: flex;
+        flex-direction: row;
+    }
+    .container-box--text{
+        display: flex;
+        flex-direction: column;
+        width: 63%;
+    }
+    #servicios h3{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        margin-bottom: 8px;
+        text-align: left;
+    }
+    #servicios p{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: left;
+        margin-bottom: 16px
+    }
+    #servicios a{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+    
+    #servicios .box-services .container-logo--services{
+        width: 48px;
+        height: 48px;
+    }
+    #servicios .box-services .container-logo--services img{
+        width: 100%;
+        height: 100%;
+    }
+    /* section video */
+    .container-iframe-video .video-suzuki{
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: auto;
+        display: flex;
+        margin-top: 40px;
+    }
+ }
   

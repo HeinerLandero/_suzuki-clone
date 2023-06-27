@@ -13,7 +13,7 @@
         const title = document.title ;
     
         window.addEventListener('blur', () => {
-            document.title = 'zzzzzzzz'
+            document.title = 'vuelve'
         });
         window.addEventListener('focus', () => {
             document.title = title
@@ -24,6 +24,9 @@
     <!-- Header 2023 -->
     <header>
         <nav class="container-nav">
+            <div class="container-icon--burger">
+                <span class="icon-burger"></span>
+            </div>
             <figure class="container-logo--nav">
                  <img src="./img/logo_suzuki.jpg" alt="logo suzuki">
             </figure>
@@ -37,7 +40,9 @@
                     <li><span class="icon-search"></span></li>
                 </ul>
             </div>
-
+            <div class="container-icon--search">
+                <span class="icon-search--mini"></span>
+            </div>
         </nav>
     </header>
     
@@ -174,28 +179,34 @@
         </div>
         <section id="servicios">
             <div class="box-services">
-                <figure>
+                <figure class="container-logo--services">
                     <img src="./assets/iconCitas.png" alt="icono citas de taller">
                 </figure>
-                <h3>CITAS TALLER</h3>
-                <p>Mantené tu Suzuki en perfectas condiciones con nuestros servicios de taller.</p>
-                <a href="#">AGENDAR CITA</a>
+                <div class="container-box--text">
+                    <h3>CITAS TALLER</h3>
+                    <p>Mantené tu Suzuki en perfectas condiciones con nuestros servicios de taller.</p>
+                    <a href="#">AGENDAR CITA</a>
+                </div>
             </div>
             <div class="box-services">
-                <figure>
+                <figure class="container-logo--services">
                     <img src="./assets/iconRepuestos.png" alt="icono repuestos">
                 </figure>
-                <h3>REPUESTOS</h3>
-                <p>Comprá tus repuestos en línea</p>
-                <a href="#">COMPRAR</a>
+                <div class="container-box--text">
+                    <h3>REPUESTOS</h3>
+                    <p>Comprá tus repuestos en línea</p>
+                    <a href="#">COMPRAR</a>
+                </div>    
             </div>
             <div class="box-services">
-                <figure>
+                <figure class="container-logo--services">
                     <img src="./assets/iconCarroceria.png" alt="icono de carroceria y pintura">
                 </figure>
-                <h3>CARROCERÍA Y PINTURA</h3>
+                <div class="container-box--text">
+                    <h3>CARROCERÍA Y PINTURA</h3>
                 <p>Siempre Comprometidos a ofrecerle el mejor servicio de enderezado, pintura y mecánica rápida.</p>
                 <a href="#">CONOCE MÁS</a>
+                </div>
             </div>
         </section>
         <!--  seccion de suzuki te mueve -->
@@ -236,7 +247,7 @@
                 </div>
             </div>
         </section>
-        <!-- seccion de tarjetas de noticias -->
+    <!-- seccion de tarjetas de noticias -->
         <section class="news-section">
             <h2 class="section-title">VE TODAS LAS NOTICIAS DE SUZUKI</h2>
             <p class="sub-tittle-news">Descubre las novedades y publicaciones que tenemos para ti.</p>
