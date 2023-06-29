@@ -107,16 +107,6 @@ header .container-nav .container-icon--search{
     display: none;
 }
 
-header .container-nav .container-icon--burger .icon-burger{
-    display: none;
-    background-image: url("./assets/ic_burguer.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width:24px;
-    height: 24px;
-}
-
 /* main */
 main{
     width: 100%;
@@ -393,6 +383,11 @@ figure .white-car{
     justify-content: center;
     align-items: center;
    
+}
+.container-box--text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #servicios img{
@@ -912,9 +907,6 @@ footer .footer-services a{
     .container-nav{
         justify-content: space-between;
     }
-    .container-icon--burger{
-        display: flex;
-    }
     .carrusel{
         top: 7.62%;
     }
@@ -1067,6 +1059,7 @@ footer .footer-services a{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 22px;
     }
     #servicios .box-services{
         display: flex;
@@ -1076,6 +1069,7 @@ footer .footer-services a{
         display: flex;
         flex-direction: column;
         width: 63%;
+        align-items: flex-start;
     }
     #servicios h3{
         font-size: 18px;
@@ -1096,10 +1090,16 @@ footer .footer-services a{
         font-weight: 400;
         line-height: 17px;
     }
+    #servicios .box-services {
+        align-items: flex-start;
+    }
+
     
     #servicios .box-services .container-logo--services{
         width: 48px;
         height: 48px;
+        margin-top: 24px;
+        margin-right: 24px;
     }
     #servicios .box-services .container-logo--services img{
         width: 100%;
