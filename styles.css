@@ -341,7 +341,7 @@ li{
 figure .white-car{
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     transform: translate(-50%, -50%);
     max-width: 90%;
     max-height: 90%;
@@ -351,6 +351,7 @@ figure .white-car{
   }
   .white-car img{
     position: absolute;
+    right: 15%;
   }
 
 
@@ -364,8 +365,8 @@ figure .white-car{
     margin-bottom:50px ;
 }
 .title-services-container .section-services{
-    font-size: 4.6rem;
-    line-height: 5.7rem;
+    font-size: 46px;
+    line-height: 57px;
     text-align: center;
 }
 #servicios{
@@ -385,7 +386,7 @@ figure .white-car{
    
 }
 .container-box--text{
-    display: flex;
+    display: flex; 
     flex-direction: column;
     align-items: center;
 }
@@ -553,8 +554,8 @@ figure .white-car{
   
   .section-title {
     text-align: center;
-    font-size: 4.5rem;
-    line-height: 4.8rem;
+    font-size: 45px;
+    line-height: 48px;
   }
   .sub-tittle-news{
     font-size: 2rem;
@@ -576,7 +577,6 @@ figure .white-car{
     width: calc(33.33% - 20px);
     margin-bottom: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    border-radius: 5px;
     overflow: hidden;
   }
   
@@ -647,7 +647,7 @@ footer .map-pin span {
     width: 25px;
     height: 25px;
     margin-right: 5px;
-    background-image: url("/assets/pin-ubicacion-suzuki.png");
+    background-image: url("./assets/pin-ubicacion-suzuki.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -674,6 +674,7 @@ footer .footer-services .footer-services-aux{
     padding: 25px 0 35px 0;
     border-bottom: 1px solid #dfe2e7;
     display: flex;
+    gap: 40px;
 }
 footer .footer-services{
     width: 100%;
@@ -682,12 +683,8 @@ footer .footer-services{
     display: flex;
     justify-content: center;
 }
-footer .footer-services .footer-services-aux{
-    margin: 10px auto;
-    padding: 25px 0 35px 0;
-    border-bottom: 1px solid #dfe2e7;
-}
-footer .footer-services h3{
+
+footer .footer-services span{
     width: 80%;
     font-size: 18px;
     font-weight: 400;
@@ -707,7 +704,7 @@ footer .footer-services a{
     color: #666666;
     font-weight: 400;
 }
-.container-ul{
+.dropdown{
     width: 16.66%;
 }
 
@@ -883,6 +880,13 @@ footer .footer-services a{
         justify-content: center;
         align-items: center;
     }
+    /* carrusel de tarjetas */
+    .carrusel-cards .title-card--options {
+        font-size: 32px;
+    }
+    .container-options--cars a{
+        font-size: 22px;
+    }
     /* section video-suzuki */
     .container-iframe-video .video-suzuki iframe{
         width: 720px;
@@ -932,6 +936,9 @@ footer .footer-services a{
     .container-info-vitara {
         flex-direction: column-reverse;
     }
+    .container-vitara{
+        padding: 0;
+    }
     .btn-container .buttom-up  {
         height: 43px;
         font-size: 14px;
@@ -957,23 +964,136 @@ footer .footer-services a{
     .car-white img{
         width: 100%;
     }
-
+    /* servicios */
+    #servicios{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    #servicios h3{
+        font-size: 18px;
+    }
+    #servicios p{
+        font-size: 14px;
+        text-align: left;
+    }
+    #servicios .container-box--text{
+        align-items: flex-start;
+    }
+    #servicios .box-services{
+        flex-direction: row;
+        align-items: flex-start; 
+        gap: 18px;   
+    }
+    #servicios figure{
+        margin-top: 20px;
+    }
+    #servicios figure img{
+        height: 48px;
+        width: 48px;
+    }
+    /* suzuki te mueve */
 
     /* swiper suzuki */
     #swiper-suzuki .container-img--zoom{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 90%;
+        height: auto;
     }
     /* section video */
+    .container-iframe-video .video-suzuki{
+        height: auto;
+        margin-top: 60px;
+    }
     .container-iframe-video .video-suzuki iframe{
-        width: 480px;
+        width: 95%;
         height: 240px;
         align-self: center;
     }
     .container-iframe-video .video-suzuki{
         justify-content: center;
         align-items: center;
+    }
+    /* section location map */
+    footer .container-footer--location{
+        margin-top: 20px;
+    }
+    footer .map-pin {
+        margin: 0;
+        padding-bottom: 20px 0 20px;
+    }
+    .container-footer--location{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .social-media{
+        padding-top: 30px;
+    }
+
+    .footer-services-aux{
+        flex-direction: column;
+        width: 100%;
+    }
+    footer .btn-select{
+        display: flex;
+        width: 100%;
+        height: auto;
+        border-bottom: 0.5px solid #7A7A7A;
+        padding: 10px 0 10px 0;
+        align-items: center;
+        position: relative;
+    }
+    
+    footer .footer-services span{
+        font-size: 18px;
+        margin: 0;
+    }
+    footer .dropdown{
+        width: 100%;
+
+    }
+    footer .footer-services li{
+        font-size: 16px;
+        font-weight: 400;
+        color: #666666;
+        font-family: 'nunito_sansregular',sans-serif;
+        border-bottom: 0.5px solid #7A7A7A;
+        padding: 10px 0 10px 0;
+    }
+    footer .menu{
+        display: none;
+        opacity: 0;
+        transition: 0.2s;
+    }
+    .caret {
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #555;
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+    }
+    .caret-rotate{
+        transform: rotate(180deg);
+      }
+    .active{
+        background: #7A7A7A;
+    }
+    .menu-open{
+        display: none;
+        opacity: 1;
+    }
+    .select-clicked{
+        box-shadow: 0 0 0.8px #26489a;
+    }
+    .btn-select:hover{
+        background: #FFF;
     }
 }
 /* responsive 720px a 449px */
@@ -1113,6 +1233,152 @@ footer .footer-services a{
         height: auto;
         display: flex;
         margin-top: 40px;
+    }
+ }
+ /* responsibe mobile */
+ @media (min-width: 320px) and (max-width: 448px){
+    /* header nav */
+    header .container-nav{
+        justify-content: center;
+    }.carrusel{
+        width: 100%;
+        top: 18.5%;
+        left: 0;
+    }
+    .container-banner img {
+        display: none;
+    }
+
+    .container-banner {
+        background-image: url('./img/bannermobile.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .carrusel h1{
+        font-size: 30px;
+        padding-left: 30px;
+    }
+    .carrusel span{
+        font-size: 40px;
+        line-height: 46px;
+    }
+    .carrusel p{
+        font-size: 15px;
+        margin-left: 30px;
+    }
+    .carrusel .barra{
+        margin-left:30px ;
+    }
+    .btn-container{
+        width: 100%;
+        flex-direction: row;
+        gap: 0;
+        border: 2px var(--red-suzuki) solid;
+    }
+    .carrusel-cards .carrusel-cards--options {
+        align-items: center;
+    }
+    .carrusel-cards .title-card--options{
+        font-size: 20px;
+        margin-top: 100px;
+    }
+    .container-options--cars a{
+        font-size: 18px;
+    }
+    .btn-view-model{
+        font-size: 15px;
+        line-height: 18px;
+        width: 132px;
+        height: 48px;
+    }
+    .btn-config {
+        font-size: 15px;
+        line-height: 18px;
+        width: 132px;
+        height: 48px;
+    }
+    .container-vitara {
+        width: 100%;
+        padding-top: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-info-vitara .cont-price{
+        display: flex;
+        gap: 10px;
+        border-top: 1px black solid;
+        width: 80%;
+        padding-top: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-info-vitara h2{
+        font-size: 20px;
+        border: none;
+    }
+    .container-info-vitara p{
+        font-size: 20px;
+    }
+    .container-vitara .img-info{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+    .container-info-vitara{
+        margin-bottom: 48px;
+    }
+    .container-vitara .img-info img{
+        width: 70%;
+        height: auto;
+    }
+    .fondo img{
+        width: 100%;
+    }
+    .car-white img {
+        position: absolute;
+    }
+    .title-services-container .section-services{
+        font-size: 24px;
+    }
+    #swiper-suzuki h2{
+        font-size: 24px;
+    }
+    #swiper-suzuki .img-zoom{
+        width: 80%;
+        height: auto;
+    }
+    #swiper-suzuki {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-iframe-video{
+        margin: 0;
+        width: 100%;
+    }
+
+    #suzuki-media .container-title-video h2{
+        font-size: 20px;
+    }
+    #suzuki-media .container-title-video p{
+        font-size: 14px;
+    }
+    #suzuki-media {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+    .section-title{
+        font-size: 28px;
     }
  }
   

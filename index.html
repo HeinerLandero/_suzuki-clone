@@ -8,17 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;1,300;1,400&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
     <title>Suzuki home</title>
-    <script type="text/javascript">
-        const title = document.title ;
-    
-        window.addEventListener('blur', () => {
-            document.title = 'vuelve'
-        });
-        window.addEventListener('focus', () => {
-            document.title = title
-        });
-    </script>
 </head>
 <body>
     <!-- Header 2023 -->
@@ -128,23 +119,16 @@
                     <figure class="img-info" >
                         <img src="./img/VitaraInfo.png" alt="">
                     </figure>
-                    <h2>DESDE:</h2>
-                    <p>$24,940*</p>
+                    <div class="cont-price">
+                        <h2>DESDE:</h2>
+                        <p>$24,940*</p>
+                    </div>
                     <div class="button-view-config">
                         <button class="btn-view-model">VER MODELO</button>
                         <button class="btn-config">CONFIGÚRALO</button>
                     </div>
                     <div class="container-colors">
                         <ul class="colors-select-container">
-                            <li><a href="#"><figure class="color-circle-select">
-                                <img src="./assets/buttonColor.svg" alt="">
-                            </figure></a></li>
-                            <li><a href="#"><figure class="color-circle-select">
-                                <img src="./assets/buttonColor.svg" alt="">
-                            </figure></a></li>
-                            <li><a href="#"><figure class="color-circle-select">
-                                <img src="./assets/buttonColor.svg" alt="">
-                            </figure></a></li>
                             <li><a href="#"><figure class="color-circle-select">
                                 <img src="./assets/buttonColor.svg" alt="">
                             </figure></a></li>
@@ -268,6 +252,7 @@
                 <a href="#" class="read-more">Leer más</a>
               </article>
             </div>
+            
           </section>
     </main>
     <!-- seccion de footer -->
@@ -306,77 +291,91 @@
                 </ul>
             </div>
         </div>
+<!-- //dropdown -->
         <div class="footer-services">
             <div class="footer-services-aux">
-                <div class="container-ul">
-                    <h3>SUVS</h3>
-                        <ul>
-                                <li>Vitara 4x2</li>
+                <div class="dropdown">
+                    <div class="btn-select">
+                        <span class="selected">SUVS</span><div class="caret"></div>
+                    </div> 
+                            <ul class="menu">
+                                <li class="active">Vitara 4x2</li>
                                 <li>Vitara 4x4</li>
                                 <li>Vitara Turbo</li>
                                 <li>Jimny</li>
+                            </ul>
+                </div>
+        
+                <div class="dropdown">
+                    <div class="btn-select">
+                        <span>COMPACTOS Y SEDANES</span><div class="caret"></div>
+                    </div>
+                        <ul class="menu">
+                                <li>Alto 800</li>
+                                <li>S-Presso</li>
+                                <li>Swift Revolution</li>
+                                <li>Baleno</li>
+                                <li>Swift Dzire</li>
+                                <li>Ciaz</li>
                         </ul>
                 </div>
         
-                <div  class="container-ul">
-                    <h3>COMPACTOS Y SEDANES</h3>
-                    <ul>
-                            <li>Alto 800</li>
-                            <li>S-Presso</li>
-                            <li>Swift Revolution</li>
-                            <li>Baleno</li>
-                            <li>Swift Dzire</li>
-                            <li>Ciaz</li>
-                    </ul>
+                <div class="dropdown">
+                    <div class="btn-select">
+                        <span class="selected">7 PASAJEROS Y PANELES</span><div class="caret"></div>
+                    </div> 
+                        <ul class="menu">
+                                <li>XL7</li>
+                                <li>APV Panel</li>
+                        </ul>
                 </div>
         
-                <div class="container-ul">
-                    <h3>7 PASAJEROS Y PANELES</h3>
-                    <ul>
-                            <li>XL7</li>
-                            <li>APV Panel</li>
-                    </ul>
-                </div>
-        
-                <div class="container-ul">
-                    <h3>POSTVENTA</h3>
-                    <ul>
-                            <li>Campaña de Seguridad</li>
-                            <li>Carrocería y Pintura</li>
-                            <li>Citas Taller</li>
-                            <li>Taller Móvil</li>
-                            <li>Repuestos</li>
-                    </ul>
+                <div class="dropdown">
+                        <div class="btn-select">
+                            <span class="selected">POSTVENTA</span><div class="caret"></div>
+                        </div>
+                        <ul class="menu">
+                                <li>Campaña de Seguridad</li>
+                                <li>Carrocería y Pintura</li>
+                                <li>Citas Taller</li>
+                                <li>Taller Móvil</li>
+                                <li>Repuestos</li>
+                        </ul>
                 </div>
                     
-                <div class="container-ul">
-                    <h3>SUCURSALES</h3>
-                    <ul>
-                            <li>Agencia Uruca, General Cañas</li>
-                            <li>Agencia Heredia</li>
-                            <li>Agencia Zapote</li>
-                            <li>Agencia Santa Ana</li>
-                            <li>Agencia San Carlos</li>
-                            <li>Centro Logístico</li>
-                            <li>Agencia Guápiles/li>
-                            <li>Agencia Pérez Zeledón</li>
-                    </ul>
-        
+                <div class="dropdown">         
+                      <div class="btn-select">
+                        <span class="selected">SUCURSALES</span><div class="caret"></div>
+                      </div>  
+                        <ul class="menu">
+                                <li>Agencia Uruca, General Cañas</li>
+                                <li>Agencia Heredia</li>
+                                <li>Agencia Zapote</li>
+                                <li>Agencia Santa Ana</li>
+                                <li>Agencia San Carlos</li>
+                                <li>Centro Logístico</li>
+                                <li>Agencia Guápiles</li>
+                                <li>Agencia Pérez Zeledón</li>
+                        </ul>
+            
                 </div>
-                <div class="container-ul">
-                    <h3>AYUDA</h3>
-                    <ul>
-                            <li>Trabajá con Suzuki</li>
-                            <li>Cotizá Tu Suzuki</li>
-                            <li>Test Drive</li>
-                            <li>Contacto</li>
-                            <li>Inchcape Protection Express Sociedad Agencia de Seguros S-A (Antes: Cohen Protección Express)
-                            </li>
-                    </ul>
+                <div class="dropdown">
+                    <div class="btn-select">
+                        <span class="selected">AYUDA</span><div class="caret"></div>
+                    </div>    
+                        <ul class="menu">
+                                <li>Trabajá con Suzuki</li>
+                                <li>Cotizá Tu Suzuki</li>
+                                <li>Test Drive</li>
+                                <li>Contacto</li>
+                        </ul>
                 </div>
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>
+
+
