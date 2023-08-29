@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;1,300;1,400&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
     <title>Suzuki home</title>
 </head>
 <body>
@@ -229,8 +230,45 @@
             </div>
         </section>
     <!-- seccion de tarjetas de noticias -->
+        <section id="section-swiper--news">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                        <img src="./img/suzuki_card_new.jpg" alt="Noticia 1">
+                        <h3 class="news-title">Título de la noticia 1</h3>
+                        <a href="#" class="read-more">Leer más</a>
+                  </div>
+                  <div class="swiper-slide">
+                        <img src="./img/suzuki_card_new.jpg" alt="Noticia 1">
+                        <h3 class="news-title">Título de la noticia 1</h3>
+                        <a href="#" class="read-more">Leer más</a>
+                  </div>
+                  <div class="swiper-slide">
+                        <img src="./img/suzuki_card_new.jpg" alt="Noticia 1">
+                        <h3 class="news-title">Título de la noticia 1</h3>
+                        <a href="#" class="read-more">Leer más</a>
+                  </div>
+                  <div class="swiper-slide">
+                        <img src="./img/suzuki_card_new.jpg" alt="Noticia 1">
+                        <h3 class="news-title">Título de la noticia 1</h3>
+                        <a href="#" class="read-more">Leer más</a>
+                  </div>
+                  <div class="swiper-slide">
+                        <img src="./img/suzuki_card_new.jpg" alt="Noticia 1">
+                        <h3 class="news-title">Título de la noticia 1</h3>
+                        <a href="#" class="read-more">Leer más</a>
+                  </div>
+                </div>
+                
+                <div class="btn-container--swipers">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                </div>
+              </div>
+        </section>
     <!-- carrusel -->
-        <section class="news-section">
+      <!--   <section class="news-section">
             <h2 class="section-title">VE TODAS LAS NOTICIAS DE SUZUKI</h2>
             <p class="sub-tittle-news">Descubre las novedades y publicaciones <br> que tenemos para ti.</p>
             <div class="news-container">
@@ -251,7 +289,7 @@
               </article>
             </div>
             
-          </section>
+          </section> -->
     </main>
     <!-- seccion de footer -->
     <footer>
@@ -371,7 +409,8 @@
             </div>
         </div>
     </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="./sliders.js"></script>
 </body>
 
 </html>

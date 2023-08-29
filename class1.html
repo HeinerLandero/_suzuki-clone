@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <title>Document</title>
+    <style>
+
+      body {
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      #swiper-section{
+        width: 100%;
+        height: 500px;
+        position: relative;
+      }
+      .swiper {
+        margin-top: 150px;
+        width: 50%;
+        height: 100%;
+      }
+      #swiper-section .card-container{
+        border-radius: 5px;
+        box-shadow: 0px 6px 7px 2px rgb(0 0 0 / 5%)
+      }
+      .card-container :where(h3,a){
+        text-align: left;
+        margin-left: 10px ;
+      }
+      .card-container a{
+        display: block;
+        text-align: start;
+        font-size: 16px;
+        font-weight: bold;
+        color: red;
+        padding: 10px;
+        text-decoration: none;
+        transition: background-color 0.2s ease-in-out 0s;
+      }
+      .card-container a:hover {
+        background-color: red;
+        color: #fff;
+        border-radius:  0 0 9.5px 9.5px
+      }
+  
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 9.5px 9.5px 0 0
+      }
+  
+      .swiper {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .swiper-button-next:after, .swiper-button-prev:after {
+        color: red;
+      }
+      .swiper-pagination-clickable .swiper-pagination-bullet{
+        background: red;
+      }
+     
+    </style>
+</head>
+<body>
+  
+  <section id="swiper-section">
+    
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <article class="card-container">
+            <img src="./img/suzuki_card_new.jpg" alt="Noticia 1">
+            <h3 class="news-title">Título de la noticia 1</h3>
+            <a href="#" class="read-more">Leer más</a>
+          </article>
+
+        </div>
+        <div class="swiper-slide">
+          <article class="card-container">
+            <img src="./img/suzuki_card_new.jpg" alt="Noticia 1">
+            <h3 class="news-title">Título de la noticia 1</h3>
+            <a href="#" class="read-more">Leer más</a>
+          </article>
+
+        </div>
+        <div class="swiper-slide">
+          <article class="card-container">
+            <img src="./img/suzuki_card_new.jpg" alt="Noticia 1">
+            <h3 class="news-title">Título de la noticia 1</h3>
+            <a href="#" class="read-more">Leer más</a>
+          </article>
+
+        </div>
+        <div class="swiper-slide">
+          <article class="card-container">
+            <img src="./img/suzuki_card_new.jpg" alt="Noticia 1">
+            <h3 class="news-title">Título de la noticia 1</h3>
+            <a href="#" class="read-more">Leer más</a>
+          </article>
+
+        </div>
+        <div class="swiper-slide">
+          <article class="card-container">
+            <img src="./img/suzuki_card_new.jpg" alt="Noticia 1">
+            <h3 class="news-title">Título de la noticia 1</h3>
+            <a href="#" class="read-more">Leer más</a>
+          </article>
+
+        </div>
+        <div class="swiper-slide">
+          <article class="card-container">
+            <img src="./img/suzuki_card_new.jpg" alt="Noticia 1">
+            <h3 class="news-title">Título de la noticia 1</h3>
+            <a href="#" class="read-more">Leer más</a>
+          </article>
+
+        </div>
+        <div class="swiper-slide">
+          <article class="card-container">
+            <img src="./img/suzuki_card_new.jpg" alt="Noticia 1">
+            <h3 class="news-title">Título de la noticia 1</h3>
+            <a href="#" class="read-more">Leer más</a>
+          </article>
+
+        </div>
+        <div class="swiper-slide">
+          <article class="card-container">
+            <img src="./img/suzuki_card_new.jpg" alt="Noticia 1">
+            <h3 class="news-title">Título de la noticia 1</h3>
+            <a href="#" class="read-more">Leer más</a>
+          </article>
+
+        </div>
+        <div class="swiper-slide">
+          <article class="card-container">
+            <img src="./img/suzuki_card_new.jpg" alt="Noticia 1">
+            <h3 class="news-title">Título de la noticia 1</h3>
+            <a href="#" class="read-more">Leer más</a>
+          </article>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </section>  
+  
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+</body>
+
+</html>
